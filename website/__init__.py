@@ -8,8 +8,8 @@ DB_NAME = "database.db"
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'varshini'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Kimseokjin#4@localhost/notes'
+    app.config['SECRET_KEY'] = 'xxxxxx'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://<username>:<password>@localhost/<db-name>'
     db.init_app(app)
 
     from .views import views
